@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace RequestVariableMiddleware.Controllers
@@ -15,7 +11,15 @@ namespace RequestVariableMiddleware.Controllers
         {
             get
             {
-                return this.HttpContext.Items["Variables"] as RequestVariables;
+                RequestVariables variables = this.HttpContext.Items["Variables"] as RequestVariables;
+                if(variables == null)
+                {
+                    throw new NullReferenceException("Variables not set in the request pipeline.");
+                }
+                else
+                {
+                    return variables;
+                }
             }
         } 
     }
