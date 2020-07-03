@@ -1,0 +1,53 @@
+baseurl = "https://www.codenesium.com/blog/"
+title = ""
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+googleAnalytics = "UA-71359140-1"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "codenesium.disqus.com"
+
+[params]
+    author = "Codenesium"
+    info = "Put your idea into production"
+    description = "A collection os software tools and knowledge"
+    keywords = ".NET, .NET Core, ASP.NET Core, TypeScript"
+    avatarurl = "images/CodenesiumIcon256.png"
+    favicon_32 = "images/CodenesiumIcon32.png"
+    favicon_16 = "images/CodenesiumIcon24.png"
+    footercontent = "Visit the <a href='https://www.codenesium.com'>homepage</a> to see our job postings and developer tools."
+    hidecredits = true
+    hidecopyright = true
+    rtl = false
+    featured_image="/images/logo.png"
+    math = true
+    custom_css = []
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    weight = 1
+    url = "https://github.com/codenesium"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter fa-2x"
+    weight = 3
+    url = "https://twitter.com/codenesium"
+
+# Menu links
+[[menu.main]]
+    name = "Home"
+    weight = 1
+    url  = "https://www.codenesium.com"
+[[menu.main]]
+    name = "Posts"
+    weight = 3
+    url  = "posts"

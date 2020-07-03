@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>.NET on </title>
+    <link>https://www.codenesium.com/blog/categories/.net/</link>
+    <description>Recent content in .NET on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.codenesium.com/blog/categories/.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to add health checks to Swagger in .NET Core</title>
+      <link>https://www.codenesium.com/blog/posts/how-to-add-health-checks-to-swagger-in-net-core/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/how-to-add-health-checks-to-swagger-in-net-core/</guid>
+      <description>The code for this example can be found on Github
+Health checks are a nice feature in ASP.NET Core that lets you create an endpoint that your load balancer or health checking systems can ping to check your service. If there is an unhealthy response then the response will have a 503 response code. Otherwise it will be 200. You can chain multiple health checks together to check the various resources your service depends on.</description>
+    </item>
+    
+    <item>
+      <title>How to generate a client for Swagger</title>
+      <link>https://www.codenesium.com/blog/posts/how-to-generate-a-client-for-swagger/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/how-to-generate-a-client-for-swagger/</guid>
+      <description>NSwag is an awesome library for generating C# and TypeScript clients for Swagger APIs.
+A complete example of this code can be found on our Github
+This is an example of how to add an endpoint to your API to generate an Angular TypeScript client and a C# client. It&amp;rsquo;s possible to use NSwag with Swashbuckle. These methods retrieve the swagger json from the API and then return a client. You can provide your own class for AuthorizedApiBase and ApiClientConfig and there are numerous configuration options.</description>
+    </item>
+    
+  </channel>
+</rss>

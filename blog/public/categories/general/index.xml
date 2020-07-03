@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on </title>
+    <link>https://www.codenesium.com/blog/categories/general/</link>
+    <description>Recent content in General on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.codenesium.com/blog/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What is Codenesium?</title>
+      <link>https://www.codenesium.com/blog/posts/what-is-codenesium/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/what-is-codenesium/</guid>
+      <description>What is Codenesium? Codenesium is a collection of development tools and resources to help with development using the Microsoft .NET Core platform.
+API Generation We provide an API generation tool to generate code from a model definition.
+There are lots of ways to provide your model.
+ Swagger definition Json C# class TypeScript class Simple model syntax  Customize your routes and assign some templates and then generate some code.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Benchmarking API requests</title>
+      <link>https://www.codenesium.com/blog/posts/benchmarking-api-requests/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/benchmarking-api-requests/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Clean project folder structure</title>
+      <link>https://www.codenesium.com/blog/posts/clean-project-folder-structure/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/clean-project-folder-structure/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Deploy a .NET Core API to Amazon LightSail </title>
+      <link>https://www.codenesium.com/blog/posts/deploy-a-.net-core-api-to-amazon-lightsail/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/deploy-a-.net-core-api-to-amazon-lightsail/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Deployment with Octopus Deploy</title>
+      <link>https://www.codenesium.com/blog/posts/deployment-with-octopus-deploy/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/deployment-with-octopus-deploy/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) How to diagnose a slow SQL Query</title>
+      <link>https://www.codenesium.com/blog/posts/how-to-diagnose-a-slow-sql-query/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/how-to-diagnose-a-slow-sql-query/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) How to have strongly typed configuration in .NET Core.</title>
+      <link>https://www.codenesium.com/blog/posts/how-to-have-strongly-typed-configuration-in-.net-core./</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/how-to-have-strongly-typed-configuration-in-.net-core./</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) How to set up a project with code standards using editorConfig</title>
+      <link>https://www.codenesium.com/blog/posts/how-to-set-up-a-project-with-code-standards-using-editorconfig/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/how-to-set-up-a-project-with-code-standards-using-editorconfig/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) How to set variables in the API request pipeline</title>
+      <link>https://www.codenesium.com/blog/posts/how-to-set-variables-in-the-api-request-pipeline/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/how-to-set-variables-in-the-api-request-pipeline/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) How to version an API</title>
+      <link>https://www.codenesium.com/blog/posts/how-to-version-an-api/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/how-to-version-an-api/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) JWT authentication with .NET Core</title>
+      <link>https://www.codenesium.com/blog/posts/jwt-authentication-with-.net-core/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/jwt-authentication-with-.net-core/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Logging errors in API requests</title>
+      <link>https://www.codenesium.com/blog/posts/logging-errors-in-api-requests/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/logging-errors-in-api-requests/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Managing database migrations with EF Core and SQL Server</title>
+      <link>https://www.codenesium.com/blog/posts/managing-database-migrations-with-ef-core-and-sql-server/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/managing-database-migrations-with-ef-core-and-sql-server/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Nuget package management best practices</title>
+      <link>https://www.codenesium.com/blog/posts/nuget-package-management-best-practices/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/nuget-package-management-best-practices/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Object mapping strategies for .NET Core</title>
+      <link>https://www.codenesium.com/blog/posts/object-mapping-strategies-for-.net-core/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/object-mapping-strategies-for-.net-core/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Repository pattern with Entity Framework Core</title>
+      <link>https://www.codenesium.com/blog/posts/repository-pattern-with-entity-framework-core/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/repository-pattern-with-entity-framework-core/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Secure password storage in .NET Core</title>
+      <link>https://www.codenesium.com/blog/posts/secure-password-storage-in-.net-core/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/secure-password-storage-in-.net-core/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Securing your .NET Core API.</title>
+      <link>https://www.codenesium.com/blog/posts/securing-your-.net-core-api./</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/securing-your-.net-core-api./</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Sentry Plan Explorer to diagnose slow SQL queries and deadlocks</title>
+      <link>https://www.codenesium.com/blog/posts/sentry-plan-explorer-to-diagnose-slow-sql-queries-and-deadlocks/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/sentry-plan-explorer-to-diagnose-slow-sql-queries-and-deadlocks/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Should you microservice</title>
+      <link>https://www.codenesium.com/blog/posts/should-you-microservice/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/should-you-microservice/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Swagger</title>
+      <link>https://www.codenesium.com/blog/posts/swagger/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/swagger/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Testing with NCrunch</title>
+      <link>https://www.codenesium.com/blog/posts/testing-with-ncrunch/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/testing-with-ncrunch/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Unit of work with Entity Framework in .NET Core</title>
+      <link>https://www.codenesium.com/blog/posts/unit-of-work-with-entity-framework-in-.net-core/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/unit-of-work-with-entity-framework-in-.net-core/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Using mediatr to create clean code</title>
+      <link>https://www.codenesium.com/blog/posts/using-mediatr-to-create-clean-code/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/using-mediatr-to-create-clean-code/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) Using tsqlt to integration test an API</title>
+      <link>https://www.codenesium.com/blog/posts/using-tsqlt-to-integration-test-an-api/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/using-tsqlt-to-integration-test-an-api/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) What is .NET Core</title>
+      <link>https://www.codenesium.com/blog/posts/what-is-.net-core/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/what-is-.net-core/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+    <item>
+      <title>(Coming Soon) What is nuget</title>
+      <link>https://www.codenesium.com/blog/posts/what-is-nuget/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.codenesium.com/blog/posts/what-is-nuget/</guid>
+      <description>We&amp;rsquo;re still figuring out what content to write. By visiting this page your vote was counted so thank you.</description>
+    </item>
+    
+  </channel>
+</rss>

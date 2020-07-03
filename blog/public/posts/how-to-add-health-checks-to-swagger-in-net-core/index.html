@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Codenesium">
+    <meta name="description" content="The code for this example can be found on Github
+Health checks are a nice feature in ASP.NET Core that lets you create an endpoint that your load balancer or health checking systems can ping to check your service. If there is an unhealthy response then the response will have a 503 response code. Otherwise it will be 200. You can chain multiple health checks together to check the various resources your service depends on.">
+    <meta name="keywords" content=".NET, .NET Core, ASP.NET Core, TypeScript">
+
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to add health checks to Swagger in .NET Core"/>
+<meta name="twitter:description" content="The code for this example can be found on Github
+Health checks are a nice feature in ASP.NET Core that lets you create an endpoint that your load balancer or health checking systems can ping to check your service. If there is an unhealthy response then the response will have a 503 response code. Otherwise it will be 200. You can chain multiple health checks together to check the various resources your service depends on."/>
+
+    <meta property="og:title" content="How to add health checks to Swagger in .NET Core" />
+<meta property="og:description" content="The code for this example can be found on Github
+Health checks are a nice feature in ASP.NET Core that lets you create an endpoint that your load balancer or health checking systems can ping to check your service. If there is an unhealthy response then the response will have a 503 response code. Otherwise it will be 200. You can chain multiple health checks together to check the various resources your service depends on." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.codenesium.com/blog/posts/how-to-add-health-checks-to-swagger-in-net-core/" />
+<meta property="article:published_time" content="2020-06-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-10T00:00:00+00:00" />
+
+
+    
+      <base href="https://www.codenesium.com/blog/posts/how-to-add-health-checks-to-swagger-in-net-core/">
+    
+    <title>
+  How to add health checks to Swagger in .NET Core · 
+</title>
+
+    
+      <link rel="canonical" href="https://www.codenesium.com/blog/posts/how-to-add-health-checks-to-swagger-in-net-core/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://www.codenesium.com/blog/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://www.codenesium.com/blog/images/CodenesiumIcon32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.codenesium.com/blog/images/CodenesiumIcon24.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.71.0" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light"
+        onload=""
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://www.codenesium.com/blog/">
+      
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.codenesium.com">Home</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.codenesium.com/blog/posts">Posts</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">How to add health checks to Swagger in .NET Core</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-06-10T00:00:00Z'>
+                June 10, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://www.codenesium.com/blog/categories/.net/">.NET</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://www.codenesium.com/blog/tags/.net/">.NET</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p>The code for this example can be found on <a href="https://github.com/codenesium/blog/tree/master/APIHealthChecks">Github</a></p>
+<p>Health checks are a nice feature in ASP.NET Core that lets you create an endpoint that your load balancer or health checking systems can ping to check your service. If there is an unhealthy response then the response will have a 503 response code. Otherwise it will be 200. You can chain multiple health checks together to check the various resources your service depends on.</p>
+<p>You may want to create different health checks for performance reasons. You may want a lightweight check that is
+used to determine if your service is alive at all and a more heavyweight check that checks everything.</p>
+<p><img src="api-health-checks/swagger.PNG" alt="alt text" title="API Health Check in Swagger"></p>
+<p>Adding a health check is straight forward. Instead of checking SQL you could just as easily performed a HTTP request or called another service.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllers();
+    services.AddOpenApiDocument();
+
+    string connectionString = this.Configuration.GetConnectionString(&#34;Default&#34;);
+
+    services.AddHealthChecks().AddCheck(&#34;sql&#34;, () =&gt;
+    {
+        string sqlHealthCheckDescription = &#34;Tests that we can connect and select from the database.&#34;;
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(&#34;SELECT TOP(1) id from dbo.Pets&#34;, connection);
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, &#34;Exception in sql health check&#34;);
+                return HealthCheckResult.Unhealthy(sqlHealthCheckDescription);
+            }
+        }
+
+        return HealthCheckResult.Healthy(sqlHealthCheckDescription);
+    });
+}
+</code></pre></div><p>Normally you would also use endpoints.MapHealthChecks like this to enable your health checks. This does work but your
+health check won&rsquo;t show up in swagger.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"> public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+{
+    if (env.IsDevelopment())
+    {
+        app.UseDeveloperExceptionPage();
+    }
+
+    app.UseHttpsRedirection();
+
+    app.UseRouting();
+
+    app.UseAuthorization();
+
+    app.UseOpenApi();
+
+    app.UseSwaggerUi3();
+
+    app.UseEndpoints(endpoints =&gt;
+    {
+        endpoints.MapControllers();
+        endpoints.MapHealthChecks(&#34;/health&#34;)
+    });
+}
+</code></pre></div><p>I prefer for my health checjs to show up in swagger. You can accomplish this by adding a health controller.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+
+namespace APIHealthChecks.Controllers
+{
+    [Route(&#34;[controller]&#34;)]
+    [ApiController]
+    [AllowAnonymous]
+    public class HealthController : ControllerBase
+    {
+        private readonly HealthCheckService healthCheckService;
+
+        public HealthController(HealthCheckService healthCheckService)
+        {
+            this.healthCheckService = healthCheckService;
+        }
+
+        /// &lt;summary&gt;
+        /// This health endpoint checks that services and resources this API depends on are functional.
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        [HttpGet]
+        public async Task&lt;ActionResult&gt; Get()
+        {
+            HealthReport report = await this.healthCheckService.CheckHealthAsync();
+            var result = new
+            {
+                status = report.Status.ToString(),
+                errors = report.Entries.Select(e =&gt; new { name = e.Key, status = e.Value.Status.ToString(), description = e.Value.Description.ToString() })
+            };
+            return report.Status == HealthStatus.Healthy ? this.Ok(result) : this.StatusCode((int)HttpStatusCode.ServiceUnavailable, result);
+        }
+    }
+}
+</code></pre></div>
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Check out the blog posts or visit the homepage to get started.</p>
+      
+      
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-71359140-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    
+
+  </body>
+
+</html>
