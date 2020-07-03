@@ -9,7 +9,7 @@ categories = [
     ".NET",
 ]
 +++
-The code for this example can be found on [Github](https://github.com/codenesium/blog/code/tree/master/RequestVariableMiddleware)
+The code for this example can be found on [Github](https://github.com/codenesium/blog/tree/master/code/RequestVariableMiddleware)
 
 Often you want to pass variables from claims or headers into your application. Instead of setting these variables in your controller you can add a middleware that stores variables in the HttpContext.Items collection and this collection is accessible inside a controller. To make it cleaner here I added an abstract controller that makes the variables available to the values controller.
 

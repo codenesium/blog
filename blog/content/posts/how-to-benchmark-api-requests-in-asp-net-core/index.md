@@ -11,7 +11,7 @@ categories = [
 +++
 
 
-The code for this example can be found on [Github](https://github.com/codenesium/blog/code/tree/master/BenchmarkApiRequests)
+The code for this example can be found on [Github](https://github.com/codenesium/blog/tree/master/code/BenchmarkApiRequests)
 
 It's helpful to see how long API requests are taking. In .NET core it's not difficult to add a middleware that will add
 a response header to your response which tells you how long the request took on the server. We've added x-time-elapsed. 

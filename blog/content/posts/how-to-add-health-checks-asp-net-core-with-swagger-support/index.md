@@ -10,7 +10,7 @@ categories = [
 ]
 +++
 
-The code for this example can be found on [Github](https://github.com/codenesium/blog/code/tree/master/APIHealthChecks)
+The code for this example can be found on [Github](https://github.com/codenesium/blog/tree/master/code/APIHealthChecks)
 
 Health checks are a nice feature in ASP.NET Core that lets you create an endpoint that your load balancer or health checking systems can ping to check your service. If there is an unhealthy response then the response will have a 503 response code. Otherwise it will be 200. You can chain multiple health checks together to check the various resources your service depends on.
 

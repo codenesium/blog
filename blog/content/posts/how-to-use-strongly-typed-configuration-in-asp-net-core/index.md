@@ -10,7 +10,7 @@ categories = [
 ]
 +++
 
-The code for this example can be found on [Github](https://github.com/codenesium/blog/code/tree/master/StronglyTypedConfiguration)
+The code for this example can be found on [Github](https://github.com/codenesium/blog/tree/master/code/StronglyTypedConfiguration)
 
 
 .NET Core makes it easy to use a strongly typed object for configuration and inject that object into your classes using the options pattern. This is a lot cleaner than accessing the configuration using ["SectionName"] syntax.  
